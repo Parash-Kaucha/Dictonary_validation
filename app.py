@@ -14,7 +14,7 @@ valid_rule = {
 
 data_dict = {"name":"Mero neupane ho","age":17}
 
-
+# This function validates string
 def validate_string(key,data_dict, valid_rule):
 
     if valid_rule[key].get("min_len") and valid_rule[key].get("max_len"):
@@ -37,6 +37,7 @@ def validate_string(key,data_dict, valid_rule):
     else:
         print("true")
 
+# This function validates integer
 def validate_int(key,data_dict, valid_rule):
     if valid_rule[key].get("max_value") and valid_rule[key].get("min_value"):
         if  valid_rule[key]["min_value"] < data_dict[key] < valid_rule[key]["max_value"]:
